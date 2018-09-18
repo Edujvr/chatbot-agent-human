@@ -171,7 +171,8 @@ limitations under the License.
         };
 
         // Display messages sent by customers
-        var receivedCustomerMessage = function(msg) {
+        var receivedCustomerMessage = function(response) {
+           msg=response.queryResult.fulfillmentText;
           if(!connectedCustomers[msg.customerId]) {
             console.log('Received message for unknown customer id: ' + JSON.stringify(msg));
             return;
