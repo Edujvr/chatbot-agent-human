@@ -95,7 +95,7 @@ class MessageRouter {
             return this._switchToOperator(customerId, customer, response);
           }
           // If not in operator mode, just grab the agent's response
-          const speech = response;
+          const speech = response.queryResult.fulfillmentText;
           // Send the agent's response to the operator so they see both sides
           // of the conversation.
           this._sendUtteranceToOperator(speech, customer, true);
