@@ -69,6 +69,6 @@ app.get('/prueba', (req, res) => {
 
 // Begin responding to websocket and http requests
 messageRouter.handleConnections();
-http.listen(process.env.POR || 3000);
+http.listen(process.env.PORT || 3000);
 
 
