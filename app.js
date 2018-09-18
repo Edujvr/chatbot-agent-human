@@ -69,7 +69,7 @@ app.get('/prueba', (req, res) => {
 
 // Begin responding to websocket and http requests
 messageRouter.handleConnections();
-/*http.listen(3000, () => {
+http.listen(3000, () => {
   console.log('Listening on *:3000');
 });
-*/
+
