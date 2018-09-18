@@ -160,8 +160,7 @@ limitations under the License.
         };
 
         // Display messages sent by any operator to the customers this operator knows about
-        var receivedOperatorMessage = function(response) {
-           var msg=response.queryResult.fulfillmentText;
+        var receivedOperatorMessage = function(msg) {
           var customer = connectedCustomers[msg.customerId];
           if(!customer) {
             console.log('Received operator message to unknown customer id: ' + JSON.stringify(msg));
