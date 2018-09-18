@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "humanhandoffdemonstratio-61e5b",
+  "private_key_id": "52af5d9869babbf27d3131431c063ffcf0495cda",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDLMEfGN/jQkpys\nZKupb+QnnljiE5/m5BIV9Cga1qW4wENzsAHH3PEss9cR3pWZLxtZg4Qfeuwf0aAB\nzBfBGrp9kNVCArYsCwb7oQo5j5larV4kwdyHPYXfkAqk+M/n+6aULyMekemIrVdv\nRD5N4wlD3twLA+N6BqPCQOFz5HJknmictGjmNIy2J3ctV5NL1Ta5G8iln2l5b6EH\ntICjwQr1HCocJid8jTa/8arKyt60/UHIEIV47E93Hr+S5+wbF7dGieiiea3pS14M\nDABXDQT8c7t7aozf+obTLfnro8HlnYlRjsqPLerweBjD4CQ1c3y3B1Tmr1gi50ZX\nqIMHXfxfAgMBAAECggEAIPlTVIgl0VdRpKprr0IQwRsx6nJr2zD8/GIUlhJqb3qI\nF8Ci8VfaLbp7txMrrOHXquWsbd1pb1p6AICqBDT9ub3k1eMRxED/35sJSUEUDoKf\nChEJ5EqoLJk4GQCl4MxWgqrJpL7iKsOSsmRdRg+Ho+OJSyJU6qskLTSRQdj7dXdz\nfxVeMv+rBeFwORgv0S/lsgqjbeNJN69xBDI8MpfB0dTf6xoknuXnIWwW/ARuFJR8\nB0IsCLyEoR3eIrh9MCHBYvq/Ce8y1+Mx+vhyBVPvx2EJ/KOS+GY0m93AdfDxBZY0\nbpNMEaeFUylZYGDntEYfJlH5vZOdnp4Zobf4CVYn6QKBgQDvYacHWukWSPuuv7CF\nOO9erJp1mpYwdeVnJRbKePidSIW/7kk0oVxEmqVRtyLhAALp5v67j3yiHUbXD61+\nHMAMhdYqDxN5jDSFrPZWbRKPNlybuYxHFn+tYhbIC34aTxV0TymU7J+VjN4veA1+\n6bwnf9Eb07InbhpFol/P3CUSSQKBgQDZS2Y3wuBZX1TeVN/TtNBT8LhQUpFfvmHO\novS9jH9dctmmMvbqSUOl2NJNNSDJIARgxG7Zf+YL1fZNkdwpELKLSYPCgcYne+Lk\nf7a38L4+3JzNRqmtIjX++kt60Om1V/F5O0GIp5vNKJzY05vcEEEsZ+QbBWef4amg\nGzIB6FaZZwKBgBGc58M8xyWinRIQfJZwx/v5SywYAbDzG7vpGLIxEGnSKjUi/TPo\nI3fQwRUwGlrfu1cmbduzBQKQkOPF/Yfn6aGCP228yjwJOtwTC9T0FYeAAnRaxJ1+\nZEqHixGQ9uhMpVF3eaHBf0RrpvVrKeMKo5NsbiBUBSmtijVRaydKFVgxAoGBALU2\n0z1HkRAXl9B/GdcVoPOP+jZKVaByRmEst0xookNNp8OaFx9WEEt8Yg4vc3Mn9164\nEvXiWvid7HXOYbwBh9TvbynETnvZLmR/OeN2q0IDe+UZvCF+OWe2V0JKfc1VVTVU\nPJf5p85Vw1B0UTQafi/JSItcW4oTiQHUDEVY/PebAoGBAKW+9z/oYUX8h5F+E1rw\nggkWduL1kDs3tFVjCA3IQYtxftO0jbt1V1Fu+SngH1KzQECDxc9aBfjvWCaPnY45\non07j1K/gSiwR41McgXDtqFXX2VrluaJvb/3fS2dfmAuL4fHp/RXGPsPSxm9VBQA\nyZ6LWjSm4zEMHr8NQaul7FgJ\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-uegrpo@humanhandoffdemonstratio-61e5b.iam.gserviceaccount.com",
+  "client_id": "112171287084376329085",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-uegrpo%40humanhandoffdemonstratio-61e5b.iam.gserviceaccount.com"
+}
