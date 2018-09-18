@@ -95,7 +95,7 @@ class MessageRouter {
             return this._switchToOperator(customerId, customer, response);
           }
           // If not in operator mode, just grab the agent's response
-          const speech = response.queryResult.fulfillmentText;
+          const speech = response;
           // Send the agent's response to the operator so they see both sides
           // of the conversation.
           this._sendUtteranceToOperator(speech, customer, true);
@@ -200,7 +200,7 @@ class MessageRouter {
       .then(() => {
         // We return an array of two responses: the last utterance from the Dialogflow agent,
         // and a mock "human" response introducing the operator.
-        const output = [ response, AppConstants.OPERATOR_GREETING ];
+        const output = [ response.queryResult.fulfillmentText;, AppConstants.OPERATOR_GREETING ];
         // Also send everything to the operator so they can see how the agent responded
         this._sendUtteranceToOperator(output, customer, true);
         return output;
