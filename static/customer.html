@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Customer Interface</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/lightslider.js"></script>
+    <link rel="stylesheet" href="css/chatbot.css" type="text/css">
+    <link rel="stylesheet" href="css/lightslider.css" type="text/css">
+    <script src="js/markdown.js"></script>
+    <base target="_blank">
+    <!--
+    <script>
+      function Editor(input, preview) {
+        this.update = function () {
+          preview.innerHTML = markdown.toHTML(input.value);
+        };
+        input.editor = this;
+        this.update();
+      }
+      var $ = function (id) { return document.getElementById(id); };
+      new Editor($("inputSpan"), $("preview"));
+    </script>
+    -->
+  </head>
+  <body class="fontStyle">
+	<div class="topstrip" id="topstrip">Desarrollado por Tecnolog&iacutea Inform&aacutetica <br/><img src="./img/icono.png" width=20 height=20 ><a href="http://pichinchanetbp:8080/" style="color:#d3d3d3">Banco Pichincha</a>&nbsp;&nbsp;&nbsp;</div>
+	<div class="topbar container-fluid" id="messages" style="background-color: #fafafa"></div>
+    <form>
+		<span style="width:100%;" id="inputSpan">
+			<input class="inputbox" placeholder="Escribe algo y presiona Enter..." id="m" name="date" autocomplete="off" value="">
+		</span>
+		<input name="submit" type="hidden" value="Submit">
+	</form>
+    <script src="/socket.io/socket.io.js"></script>
+  </body>
+</html>
+
