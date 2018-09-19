@@ -191,8 +191,8 @@ function renderRichControls(data, parent){
 
     var i,len = data.length;
     for(i=0;i<len;i++){
-        if(data[i] && data[i].hasOwnProperty('type')){
-            if(data[i]['type']==='link_out_chip' &&
+        if(data[i] && data[i].hasOwnProperty('message')){
+            if(data[i]['message']==='link_out_chip' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderLinkOutSuggestion(data[i],parent);
             }
@@ -204,7 +204,7 @@ function renderRichControls(data, parent){
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderBasicCard(data[i],parent);
             }
-            if(data[i]==='listSelect' &&
+            if(data[i]['message']==='listSelect' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderList(data[i],parent);
             }
