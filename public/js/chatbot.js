@@ -24,6 +24,7 @@ $(function () {
     socket.on('customer message', function(response){
         $("#m").removeAttr("disabled");
         msg=response.queryResult.fulfillmentText;
+	var messages=response.queryResult.fulfillmentMessages; 
         if(response.queryResult.diagnosticInfo!=null){
             eoc=response.queryResult.diagnosticInfo.fields.end_conversation;
         }else{
@@ -39,18 +40,6 @@ $(function () {
                 'class':"float-right",
                 tabindex:0
             });
-/*
-        var answerContainerDiv = jQuery('<div/>',{
-                'class':"float-right",
-                tabindex:1
-            });
-        var simpleResponseRow = jQuery('<div/>',{
-                class:'row'
-            });
-        var simpleResponseDiv = jQuery('<div/>',{
-            class:'textResponse'
-            });
-*/
         $("#messages").append(answerRow);
         $(answerRow).append(answerCol);
         $(answerCol).append(answerContainerDiv);
@@ -58,6 +47,7 @@ $(function () {
         if (textFromDefaultResponse.trim()!==''){
             renderDefaultResponse(textFromDefaultResponse,answerContainerDiv);
         }
+	renderRichControls(messages, answerContainerDiv);
         var isDisabled = $('#m').prop('disabled');
         if(eoc){
             $('#m').attr("disabled","disabled");
@@ -85,7 +75,6 @@ $(function () {
         }
         var objDiv = document.getElementById("messages");
         objDiv.scrollTop = objDiv.scrollHeight;
-        //renderRichControls(messages, answerContainerDiv);
 /*
         $(answerContainerDiv).append(simpleResponseRow);
         $(simpleResponseRow).append(simpleResponseDiv);
@@ -274,7 +263,7 @@ function renderList(data,parent){
                     $("#message").removeAttr("disabled");
                 }
                 var textToSubmit = $(this).attr('data-key');
-                $("#message").val(textToSubmit);
+                $("#m").val(textToSubmit);
                 $( "form" ).trigger( "submit" );
                 $(listGroup).addClass('disabledbutton');
             });
@@ -319,7 +308,7 @@ function renderList(data,parent){
         }
     }
     parent.append(listGroup);
-    $("#message").attr("disabled","disabled");
+    $("#m").attr("disabled","disabled");
 }
 
 function renderCarousel(data,parent){
