@@ -195,12 +195,12 @@ function renderRichControls(data, parent){
             if(data[i]['message']==='link_out_chip' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderLinkOutSuggestion(data[i],parent);
-            }/*
-            if(data[i]['type']==='simple_response' &&
+            }
+            if(data[i]['message']==='simpleResponses' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderSimpleResponse(data[i],parent);
-            }*/
-            if(data[i]['type']==='basic_card' &&
+            }
+            if(data[i]['message']==='basic_card' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderBasicCard(data[i],parent);
             }
@@ -208,7 +208,7 @@ function renderRichControls(data, parent){
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderList(data[i],parent);
             }
-            if(data[i]['type']==='carousel_card' &&
+            if(data[i]['message']==='carousel_card' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderCarousel(data[i],parent);
             }
@@ -434,7 +434,7 @@ function renderSimpleResponse(data, parent){
         'class':'textResponse gaSimpleResponse'
     });
     var simpleResponseText = jQuery('<p/>',{
-        html:data['textToSpeech'],
+        html:data.simpleResponses.simpleResponses['textToSpeech'],
         tabindex:1
     });
     simpleResponseDiv.append(simpleResponseInnerDiv);
