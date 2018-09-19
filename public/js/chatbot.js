@@ -436,7 +436,7 @@ function renderSimpleResponse(data, parent){
         'class':'textResponse gaSimpleResponse'
     });
     var simpleResponseText = jQuery('<p/>',{
-        html:data.simpleResponses.[i]['textToSpeech'],
+        html:data.simpleResponses.simpleResponses[i]['textToSpeech'],
         tabindex:1
     });
     simpleResponseDiv.append(simpleResponseInnerDiv);
