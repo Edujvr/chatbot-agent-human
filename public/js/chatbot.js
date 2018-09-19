@@ -228,12 +228,12 @@ function renderRichControls(data, parent){
 
 function renderList(data,parent){
 
-    var i, len = data['items'].length;
+    var i, len = data.listSelect['items'].length;
     var listGroup = jQuery('<div/>',{
         'class':'list-group card gaListGroup'
     });
-    if(data['title']){
-        var titleOfCard = data['title'];
+    if(data.listSelect['title']){
+        var titleOfCard = data.listSelect['title'];
         var listGroupHeading = jQuery('<div/>',{
             'class':'gaListHeader card-header deep-orange lighten-1 white-text',
             'html':titleOfCard
@@ -241,7 +241,7 @@ function renderList(data,parent){
         listGroup.append(listGroupHeading);
     }
     for(i=0;i<len;i++){
-        var item = data['items'][i];
+        var item = data.listSelect['items'][i];
         if(item){
             var optionTitle = item["title"];
             var optionDescription = item["description"];
@@ -260,7 +260,7 @@ function renderList(data,parent){
                     var buttonRow = window.currentSuggestionChips;
                     buttonRow.remove();
                     window.currentSuggestionChips = null;
-                    $("#message").removeAttr("disabled");
+                    $("#m").removeAttr("disabled");
                 }
                 var textToSubmit = $(this).attr('data-key');
                 $("#m").val(textToSubmit);
