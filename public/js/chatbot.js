@@ -195,11 +195,11 @@ function renderRichControls(data, parent){
             if(data[i]['message']==='link_out_chip' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderLinkOutSuggestion(data[i],parent);
-            }
+            }/*
             if(data[i]['message']==='simpleResponses' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderSimpleResponse(data[i],parent);
-            }
+            }*/
             if(data[i]['message']==='basic_card' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderBasicCard(data[i],parent);
