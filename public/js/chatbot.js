@@ -193,23 +193,23 @@ function renderRichControls(data, parent){
     for(i=0;i<len;i++){
         if(data[i] && data[i].hasOwnProperty('type')){
             if(data[i]['type']==='link_out_chip' &&
-                data[i]['platform']==='google'){
+                data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderLinkOutSuggestion(data[i],parent);
             }
             if(data[i]['type']==='simple_response' &&
-                data[i]['platform']==='google'){
+                data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderSimpleResponse(data[i],parent);
             }
             if(data[i]['type']==='basic_card' &&
-                data[i]['platform']==='google'){
+                data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderBasicCard(data[i],parent);
             }
-            if(data[i]['type']==='list_card' &&
-                data[i]['platform']==='google'){
+            if(data[i]==='listSelect' &&
+                data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderList(data[i],parent);
             }
             if(data[i]['type']==='carousel_card' &&
-                data[i]['platform']==='google'){
+                data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderCarousel(data[i],parent);
             }
         }
