@@ -69,7 +69,13 @@ limitations under the License.
             alert('This customer has disconnected');
             return false;
           }
-          var messageText = $('#m').val();
+          //var messageText = $('#m').val();
+          var messageText={
+            queryResult:{
+              fulfillmentText:$('#m').val()
+            
+          }
+        }
           socket.emit('operator message', messageObject(currentTab.customerId, messageText));
           $('#m').val('');
           return false;
@@ -167,7 +173,7 @@ limitations under the License.
             return;
           }
           customer.window
-            .append($('<li class="operator-message">').text(msg.utterance));
+            .append($('<li class="operator-message">').text(msg.utterance.queryResult.fulfillmentText));
         };
 
         // Display messages sent by customers
@@ -198,4 +204,3 @@ limitations under the License.
     </script>
   </body>
 </html>
-
