@@ -427,6 +427,8 @@ function renderBasicCard(data,parent){
 }
 
 function renderSimpleResponse(data, parent){
+    var i, len = data.simpleResponses['simpleResponses'].length;
+		
     var simpleResponseDiv = jQuery('<div/>',{
         'class':'row'
     });
@@ -434,7 +436,7 @@ function renderSimpleResponse(data, parent){
         'class':'textResponse gaSimpleResponse'
     });
     var simpleResponseText = jQuery('<p/>',{
-        html:data.simpleResponses['textToSpeech'],
+        html:data.simpleResponses['textToSpeech'][len],
         tabindex:1
     });
     simpleResponseDiv.append(simpleResponseInnerDiv);
