@@ -245,7 +245,7 @@ function renderList(data,parent){
         if(item){
             var optionTitle = item["title"];
             var optionDescription = item["description"];
-            var optionKey = item["optionInfo"]["key"];
+            var optionKey = item["info"]["key"];
             var imageUrl;
             if(item["image"]){
                 imageUrl = item["image"]["url"];
