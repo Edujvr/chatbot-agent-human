@@ -428,7 +428,7 @@ function renderBasicCard(data,parent){
 
 function renderSimpleResponse(data, parent){
     var i, len = data.simpleResponses['simpleResponses'].length;
-		
+    for (i = 0; i < len; i++) {	
     var simpleResponseDiv = jQuery('<div/>',{
         'class':'row'
     });
@@ -436,12 +436,13 @@ function renderSimpleResponse(data, parent){
         'class':'textResponse gaSimpleResponse'
     });
     var simpleResponseText = jQuery('<p/>',{
-        html:data.simpleResponses['textToSpeech'][len],
+        html:data.simpleResponses['textToSpeech'][i],
         tabindex:1
     });
     simpleResponseDiv.append(simpleResponseInnerDiv);
     simpleResponseInnerDiv.append(simpleResponseText);
     parent.append(simpleResponseDiv);
+    }
 }
 
 function renderLinkOutSuggestion(data, parent){
