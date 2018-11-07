@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "banco-pichincha-faq-bot-2da1b",
+  "private_key_id": "ea0ae5ef81e9db614fada34ee51711bd05958553",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCySF3gtSRiJGO4\nyQvM0BEC8DKhybEyiokFsK46iuy6uF0yNSJLPwtl0T2NKrlkn+mRSoZPw/dvm7c5\nIDdBoJJJ0NcQpruJTljYyp+E8razYsJ2dZDnZyc0ClfbFW5YZJhgKUaUfK4uOgUp\n7JQ5OJNcD9IKdL+5ItYwHXO7e0E9O5cuE+VvuBJgKetFnnA4CDJmyCht+N2IAStc\n3cUqfHgsPFlPig0yIjKWNeAcJYA/kQkPIuKZHLxilnpYPMoAYRGzIHUnUzMXTyny\n51SIvQ84TCk0iyGuODIFsENRTvcglVdF8tlVr9pGQfpF0j3JZetahGEK0fgFTQwt\npcpaboA9AgMBAAECggEAUr/6KvmJGLCRRMy0WG1e6AE7TxMB11asAOMgC3Y+KPC3\n+TzmXQy3KpwzOJnTEVyUGecAbnekGr6pDa/hVenE3NQ9brIlK7cc0AtEfX32xU6a\nukcZaf7cGHCQlNTesdKHU2L1KqiwZC50BSCVL/YNl9aUBFxqPPFpf028URIFlviR\ngpUZ9z1V2F+iJoFA82g6phD2Myel84qWutA+bmFSfqNXyQkAUufyP/0Z0mEazP2x\nAdUguiC1UoDlFDArciW0BPWUw1GeIU8RogylpKgzsPWc2o1SPtv3Jre9SLNcr8jZ\nMDQcPHet+oh/s4ywiPbjJOKUu4n/rV72f8ZdTVJdNQKBgQDsKstLDoQz3QkLXmvt\njpLhDoSm+uq9MeIkwKpSMhtkANYgbHWOCupbBKozRc/aiXRZwneJwyB9Uevrixqj\n0j6d/8btodlMgBuWH3JPxV67Lc9kceg7BN8SQlv+ejazGLAZ1OjPV5lgg7ZT9U7X\nSlIukIl8WsxY9mLJ95ixqlyQAwKBgQDBQSbAB3IWIFCHYnfrhoxNAhbZZuMhDv6q\nMWV4c7tHwjhYGz+1cbqyqnQSCHn6DbuvMa/pfieKtFfZ1ffHWTBCyEzMcpRbMSqu\ntH44O0lRzQ7VrLYzPDxRFQwlQq1Fw2UTfQd6GC1uHn4QicmyYEe4jKGYt5tacPH8\nRQp0BupavwKBgQCjv/RfYXxW/Z6kzF5nQ+EhvVBK+1XBwxG7S/+MqIOHbnEJ4EoO\nKBFg9LYSgQhizcXn6se5tJsVabT8B+J7zm5uXQgQgpVJztXR3JIFL6PEgzn2umg8\na99EKNDifNjqi2anMpIOGf4WBp1oT4HQEw8yjDNYDxj7YjMTOOMd5TLzAwKBgAVc\nY1DMZBPNDa7TwnPcJaQ1PKEHQ6G1Isdh22i9/SH+d0Wqa9gCsaUnKVUeuxN+sggo\nHrMhdsNYQV+fmeIDzVzs5YR+YTMuZ/q0sxOoQV5ti83NnrhJIXs2VEHsWZYn13P0\n8fInHYuCeQjIabnzBcpOzGTKIxsdKvlOiP2y+2lNAoGBALdkTwJstOPNs7FcPwgl\nKfE8TPvfFhoYm4HYC3lagur8puSy2n43u6mcg1F7XPDn2uEPzM6uS0oMr0A+ErFU\ndRC+rwNU5Ic5O18Ad27MDjHQ9+GWT2XTuuxoe63xnZOs5lIsOxyVgA4JUZO9o80R\nAOgn65prqe3hDgLvmx/hv1Vp\n-----END PRIVATE KEY-----\n",
+  "client_email": "banco-pichincha-faq-bot-2da1b@appspot.gserviceaccount.com",
+  "client_id": "",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/banco-pichincha-faq-bot-2da1b%40appspot.gserviceaccount.com"
+}
