@@ -471,7 +471,7 @@ function renderSuggestionChips(data,parent){
         class:'gaSuggestionChipRow'
     });
     for (i = 0; i < len; i++) {
-        if (data["suggestions"][i]) {
+        if (data["suggestions"]["suggestions"][i]) {
             //make a button for it
             var buttonText = data["suggestions"][i]['title'];
             var button = jQuery('<button/>',{
