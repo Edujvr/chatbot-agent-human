@@ -216,11 +216,9 @@ function renderRichControls(data, parent){
     }
 
     for(i=0;i<len;i++){
-        if(data[i] && data[i].hasOwnProperty('type')){
-            if(data[i]['type']==='suggestions' &&
-                data[i]['platform']==='google'){
-                renderSuggestionChips(data[i],parent);
-            }
+        if(data[i]['message']==='suggestions' &&
+           data[i]['platform']==='google'){
+           renderSuggestionChips(data[i],parent);
         }
     }
 
