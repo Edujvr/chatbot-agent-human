@@ -484,8 +484,8 @@ function renderSuggestionChips(data,parent){
                 var textToSubmit = this.textContent;
                 suggestionChipRowDiv.remove();
                 window.currentSuggestionChips = null;
-                $("#message").removeAttr("disabled");
-                $("#message").val(textToSubmit);
+                $("#m").removeAttr("disabled");
+                $("#m").val(textToSubmit);
                 $( "form" ).trigger( "submit" );
             });
         }
