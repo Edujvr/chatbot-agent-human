@@ -217,7 +217,7 @@ function renderRichControls(data, parent){
 
     for(i=0;i<len;i++){
         if(data[i]['message']==='suggestions' &&
-           data[i]['platform']==='google'){
+           data[i]['platform']==='ACTIONS_ON_GOOGLE'){
            renderSuggestionChips(data[i],parent);
         }
     }
