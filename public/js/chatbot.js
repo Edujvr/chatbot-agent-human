@@ -192,7 +192,7 @@ function renderRichControls(data, parent){
     var i,len = data.length;
     for(i=0;i<len;i++){
         if(data[i] && data[i].hasOwnProperty('message')){
-            if(data[i]['message']==='suggestions' &&
+            if(data[i]['message']==='link_out_chip' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderLinkOutSuggestion(data[i],parent);
             }/*
@@ -217,7 +217,7 @@ function renderRichControls(data, parent){
 
     for(i=0;i<len;i++){
         if(data[i] && data[i].hasOwnProperty('type')){
-            if(data[i]['type']==='suggestion_chips' &&
+            if(data[i]['type']==='suggestions' &&
                 data[i]['platform']==='google'){
                 renderSuggestionChips(data[i],parent);
             }
