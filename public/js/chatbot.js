@@ -192,7 +192,7 @@ function renderRichControls(data, parent){
     var i,len = data.length;
     for(i=0;i<len;i++){
         if(data[i] && data[i].hasOwnProperty('message')){
-            if(data[i]['message']==='link_out_chip' &&
+            if(data[i]['message']==='suggestions' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderLinkOutSuggestion(data[i],parent);
             }/*
