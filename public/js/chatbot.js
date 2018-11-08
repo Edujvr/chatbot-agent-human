@@ -463,7 +463,7 @@ function renderLinkOutSuggestion(data, parent){
 }
 
 function renderSuggestionChips(data,parent){
-    var i, len = data['suggestions'].length;
+    var i, len = data['suggestions']['suggestions'].length;
     var buttonRowDiv = jQuery('<div/>',{
         class:'row'
     });
