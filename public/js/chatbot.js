@@ -27,9 +27,9 @@ $(function () {
         msg=response.queryResult.fulfillmentMessages;
 	var i,len = response.queryResult.fulfillmentMessages.length;
     	for(i=0;i<len;i++){
-		var obj = msg[i][simpleResponses];
+		var obj = msg[i]['simpleResponses'];
 		if(msg[i]['message']==='simpleResponses'){
-                	var speech=obj[simpleResponses][i].textToSpeech;
+                	var speech=obj['simpleResponses'][i].textToSpeech;
             }
 	}
 		/*
