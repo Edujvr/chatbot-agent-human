@@ -70,12 +70,27 @@ limitations under the License.
             return false;
           }
           //var messageText = $('#m').val();
-          var messageText={
+           
+         var messageText={
+            queryResult:{
+              fulfillmentMessages:[
+                {
+                  message:'text',
+                  text: {
+                    text: [
+                      $('#m').val()
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+         /* var messageText={
             queryResult:{
               fulfillmentText:$('#m').val()
             
           }
-        }
+        }*/
           socket.emit('operator message', messageObject(currentTab.customerId, messageText));
           $('#m').val('');
           return false;
