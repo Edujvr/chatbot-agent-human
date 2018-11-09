@@ -24,7 +24,7 @@ $(function () {
     socket.on('customer message', function(response){
         $("#m").removeAttr("disabled");
 	var converter = new showdown.Converter();	    
-        msg=converter.makeHtml(response.queryResult.fulfillmentMessages);
+        msg=response.queryResult.fulfillmentMessages;
 	var i,len = response.queryResult.fulfillmentMessages.length;
     	for(i=0;i<len;i++){
 		var obj = msg[i];
