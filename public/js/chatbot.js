@@ -176,6 +176,7 @@ $(function () {
 */
 
 function renderDefaultResponse(textFromDefaultResponse,parent){
+    var converter = new showdown.Converter();
     var simpleResponseRow = jQuery('<div/>',{
         class:'row'
     });
@@ -183,7 +184,7 @@ function renderDefaultResponse(textFromDefaultResponse,parent){
         class:'textResponse'
     });
     $(simpleResponseRow).append(simpleResponseDiv);
-    $(simpleResponseDiv).html(textFromDefaultResponse);
+    $(simpleResponseDiv).html(converter.makeHtml(textFromDefaultResponse));
     parent.append(simpleResponseRow);
 }
 
