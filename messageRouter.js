@@ -207,11 +207,12 @@ class MessageRouter {
                 {
                   text: {
                     text: [
-                    AppConstants.OPERATOR_GREETING
-                  ]
+                      AppConstants.OPERATOR_GREETING
+                    ]
+                  }
                 }
               ]
-             }
+            }
           }
         }
         //const output = [ response, AppConstants.OPERATOR_GREETING ];
