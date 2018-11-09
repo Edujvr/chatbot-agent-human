@@ -22,5 +22,5 @@ module.exports = {
 
   CONTEXT_OPERATOR_REQUEST: 'operator_request',
 
-  OPERATOR_GREETING: `Hola, Soy un agente de Banco. Como puedo ayudarte?`
+  OPERATOR_GREETING: `Hola, Soy un agente de Soporte. Como puedo ayudarte?`
 };
