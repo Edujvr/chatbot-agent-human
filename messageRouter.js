@@ -204,12 +204,14 @@ class MessageRouter {
         var msgAgnt={
             queryResult:{
               fulfillmentMessages:[
-                text: {
-                  text: [
+                {
+                  text: {
+                    text: [
                     AppConstants.OPERATOR_GREETING
                   ]
                 }
               ]
+             }
           }
         }
         //const output = [ response, AppConstants.OPERATOR_GREETING ];
