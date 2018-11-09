@@ -29,7 +29,7 @@ $(function () {
 	var i,len = response.queryResult.fulfillmentMessages.length;
     	for(i=0;i<len;i++){
 		var obj = msg[i]['simpleResponses'];
-		if(msg[i]['message']==='simpleResponses'){
+		if(msg[i]['message']==='text'){
                 	 speech=obj['simpleResponses'][i].textToSpeech;
             }
 	}  	  
