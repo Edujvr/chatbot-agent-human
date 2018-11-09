@@ -23,7 +23,8 @@ $(function () {
     // When we receive a customer message, display it
     socket.on('customer message', function(response){
         $("#m").removeAttr("disabled");
-        msg=markdown.toHTML(response.queryResult.fulfillmentText);
+	var converter = new showdown.Converter();
+        msg=converter.makeHtml(response.queryResult.fulfillmentText);
 	var messages=response.queryResult.fulfillmentMessages; 
         if(response.queryResult.diagnosticInfo!=null){
             eoc=response.queryResult.diagnosticInfo.fields.end_conversation;
@@ -176,7 +177,6 @@ $(function () {
 */
 
 function renderDefaultResponse(textFromDefaultResponse,parent){
-    var converter = new showdown.Converter();
     var simpleResponseRow = jQuery('<div/>',{
         class:'row'
     });
@@ -184,7 +184,7 @@ function renderDefaultResponse(textFromDefaultResponse,parent){
         class:'textResponse'
     });
     $(simpleResponseRow).append(simpleResponseDiv);
-    $(simpleResponseDiv).html(converter.makeHtml(textFromDefaultResponse));
+    $(simpleResponseDiv).html(textFromDefaultResponse);
     parent.append(simpleResponseRow);
 }
 
