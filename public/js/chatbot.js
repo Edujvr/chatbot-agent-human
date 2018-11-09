@@ -30,7 +30,9 @@ $(function () {
 		var obj = msg[i];
 		if(msg[i]['message']==='simpleResponses'){
                 	var speech= msg[simpleResponses][simpleResponses][i].textToSpeech;
-            }/*
+            }
+	}
+		/*
     	}    
 	  
 	var messages=response.queryResult.fulfillmentMessages; 
