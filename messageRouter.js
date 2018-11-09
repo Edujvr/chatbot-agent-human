@@ -205,6 +205,7 @@ class MessageRouter {
             queryResult:{
               fulfillmentMessages:[
                 {
+                  message:'text',
                   text: {
                     text: [
                       AppConstants.OPERATOR_GREETING
