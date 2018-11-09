@@ -29,7 +29,7 @@ $(function () {
     	for(i=0;i<len;i++){
 		var obj = msg[i];
 		if(msg[i]['message']==='simpleResponses'){
-                	var speech= msg[i][simpleResponses][simpleResponses][0].textToSpeech;
+                	var speech= msg[i][simpleResponses][simpleResponses][i].textToSpeech;
             }
 	}
 		/*
