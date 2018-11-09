@@ -32,10 +32,7 @@ $(function () {
 		if(msg[i]['message']==='simpleResponses'){
                 	 speech=obj['simpleResponses'][i].textToSpeech;
             }
-	}
-		
-    	}    
-	  
+	}  	  
 	var messages=response.queryResult.fulfillmentMessages; 
         if(response.queryResult.diagnosticInfo!=null){
             eoc=response.queryResult.diagnosticInfo.fields.end_conversation;
