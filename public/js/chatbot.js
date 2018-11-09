@@ -23,8 +23,7 @@ $(function () {
     // When we receive a customer message, display it
     socket.on('customer message', function(response){
         $("#m").removeAttr("disabled");
-	var speech ='';
-	var converter = new showdown.Converter();	    
+	var speech ='';	    
         msg=response.queryResult.fulfillmentMessages;
 	var i,len = response.queryResult.fulfillmentMessages.length;
     	for(i=0;i<len;i++){
