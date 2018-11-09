@@ -214,7 +214,6 @@ class MessageRouter {
               ]
             }
           }
-        }
         //const output = [ response, AppConstants.OPERATOR_GREETING ];
         const output = [ response, msgAgnt ];
         const output2 = [ response.queryResult.fulfillmentText, AppConstants.OPERATOR_GREETING ];
