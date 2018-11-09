@@ -192,7 +192,7 @@ function renderDefaultResponse(textFromDefaultResponse,parent){
         class:'textResponse'
     });
     $(simpleResponseRow).append(simpleResponseDiv);
-    $(simpleResponseDiv).html(textFromDefaultResponse);
+    $(simpleResponseDiv).html(converter.makeHtml(textFromDefaultResponse));
     parent.append(simpleResponseRow);
 }
 
