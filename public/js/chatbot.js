@@ -28,9 +28,9 @@ $(function () {
         msg=response.queryResult.fulfillmentMessages;
 	var i,len = response.queryResult.fulfillmentMessages.length;
     	for(i=0;i<len;i++){
-		var obj = msg[i]['simpleResponses'];
-		if(msg[i]['message']==='simpleResponses'){
-                	 speech=obj['simpleResponses'][i].textToSpeech;
+		var obj = msg[i]['text'];
+		if(msg[i]['message']==='text'){
+                	 speech=obj['text'][i].textToSpeech;
             }
 	}  	  
 	var messages=response.queryResult.fulfillmentMessages; 
