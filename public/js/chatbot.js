@@ -24,7 +24,7 @@ $(function () {
     socket.on('customer message', function(response){
         $("#m").removeAttr("disabled");
 	var converter = new showdown.Converter();
-        msg=converter.makeHtml(response.queryResult.fulfillmentText);
+        msg=converter.makeHtml(response.queryResult.fulfillmentMessages.text.text);
 	var messages=response.queryResult.fulfillmentMessages; 
         if(response.queryResult.diagnosticInfo!=null){
             eoc=response.queryResult.diagnosticInfo.fields.end_conversation;
