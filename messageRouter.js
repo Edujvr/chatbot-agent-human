@@ -203,8 +203,13 @@ class MessageRouter {
         // and a mock "human" response introducing the operator.
         var msgAgnt={
             queryResult:{
-              fulfillmentText:AppConstants.OPERATOR_GREETING
-            
+              fulfillmentMessages:[
+                text: {
+                  text: [
+                    AppConstants.OPERATOR_GREETING
+                  ]
+                }
+              ]
           }
         }
         //const output = [ response, AppConstants.OPERATOR_GREETING ];
