@@ -23,16 +23,17 @@ $(function () {
     // When we receive a customer message, display it
     socket.on('customer message', function(response){
         $("#m").removeAttr("disabled");
+	var speech;
 	var converter = new showdown.Converter();	    
         msg=response.queryResult.fulfillmentMessages;
 	var i,len = response.queryResult.fulfillmentMessages.length;
     	for(i=0;i<len;i++){
 		var obj = msg[i]['simpleResponses'];
 		if(msg[i]['message']==='simpleResponses'){
-                	var speech=obj['simpleResponses'][i].textToSpeech;
+                	 speech=obj['simpleResponses'][i].textToSpeech;
             }
 	}
-		/*
+		
     	}    
 	  
 	var messages=response.queryResult.fulfillmentMessages; 
@@ -54,7 +55,7 @@ $(function () {
         $("#messages").append(answerRow);
         $(answerRow).append(answerCol);
         $(answerCol).append(answerContainerDiv);
-        var textFromDefaultResponse = msg;
+        var textFromDefaultResponse = speech;
         if (textFromDefaultResponse.trim()!==''){
             renderDefaultResponse(textFromDefaultResponse,answerContainerDiv);
         }
