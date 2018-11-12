@@ -199,7 +199,7 @@ limitations under the License.
           }
           // If your implementation has access to the customer's name,
           // you can modify the next line to display it in the prefix.
-          var prefix = msg.isAgentResponse ? 'Agente: ' : 'CLiente: ';
+          var prefix = msg.isAgentResponse ? 'Agente: ' : 'Cliente: ';
           connectedCustomers[msg.customerId]
             .window
             .append($('<li class="customer-message">')
