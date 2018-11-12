@@ -188,7 +188,7 @@ limitations under the License.
             return;
           }
           customer.window
-            .append($('<li class="operator-message">').text(msg.utterance.queryResult.fulfillmentMessages.0.text.text.0));
+            .append($('<li class="operator-message">').text(msg.utterance.queryResult.fulfillmentMessages.text.text));
         };
 
         // Display messages sent by customers
