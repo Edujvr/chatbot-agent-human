@@ -66,7 +66,7 @@ limitations under the License.
         // the current tab's customer
         $('form').submit(function(){
           if(currentTab.disconnected) {
-            alert('This customer has disconnected');
+            alert('Este cliente se ha desconectado');
             return false;
           }
           //var messageText = $('#m').val();
@@ -160,7 +160,7 @@ limitations under the License.
           connectedCustomers[customerId]
             .window
             .append($('<li class="customer-message">')
-            .text('--- Customer disconnected ---'));
+            .text('--- Cliente desconectado ---'));
 
         };
 
@@ -188,7 +188,7 @@ limitations under the License.
             return;
           }
           customer.window
-            .append($('<li class="operator-message">').text(msg.utterance.queryResult.fulfillmentText));
+            .append($('<li class="operator-message">').text(msg.utterance.queryResult.fulfillmentMessages.0.text.text.0));
         };
 
         // Display messages sent by customers
