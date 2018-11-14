@@ -202,34 +202,33 @@ class MessageRouter {
         // We return an array of two responses: the last utterance from the Dialogflow agent,
         // and a mock "human" response introducing the operator.
         var msgAgnt={
-            queryResult:{
-              fulfillmentMessages:[
-                {
-                  "message" :"simpleResponses",   
-                  "platform": "ACTIONS_ON_GOOGLE",
-                  "simpleResponses": {
+          "queryResult": {
+            "fulfillmentMessages": [
+              {
+                "message": "simpleResponses",
+                "platform": "ACTIONS_ON_GOOGLE",
+                "simpleResponses": {
                   "simpleResponses": [
-                {
-                  "textToSpeech": ""
+                    {
+                      "textToSpeech": ""
+                    }
+                  ]
                 }
-          ]
-        }
-      },
-      {
-        "message" :"simpleResponses",
-        "platform": "ACTIONS_ON_GOOGLE",
-        "simpleResponses": {
-          "simpleResponses": [
-            {
-              "textToSpeech": AppConstants.OPERATOR_GREETING
-            }
-          ]
-        }
-      }
-                 
-              ]
-            }
+              },
+              {
+                "message": "simpleResponses",
+                "platform": "ACTIONS_ON_GOOGLE",
+                "simpleResponses": {
+                  "simpleResponses": [
+                    {
+                      "textToSpeech": AppConstants.OPERATOR_GREETING
+                    }
+                  ]
+                }
+              }
+            ]
           }
+        }
         //const output = [ response, AppConstants.OPERATOR_GREETING ];
         const output = [ response, msgAgnt ];
         const output2 = [ response.queryResult.fulfillmentText, AppConstants.OPERATOR_GREETING ];
