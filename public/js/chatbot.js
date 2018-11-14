@@ -205,7 +205,7 @@ function renderRichControls(data, parent){
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderLinkOutSuggestion(data[i],parent);
             }
-            if(data[i]['message']==='simpleResponses' &&
+            if(i!=0 && data[i]['message']==='simpleResponses' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderSimpleResponse(data[i],parent);
             }
