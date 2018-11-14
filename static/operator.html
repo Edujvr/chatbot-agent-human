@@ -101,6 +101,8 @@ limitations under the License.
          }
           socket.emit('operator message', messageObject(currentTab.customerId, messageText));
           $('#m').val('');
+           var objDiv = document.getElementById("chatWindows");
+            objDiv.scrollTop = objDiv.scrollHeight;
           return false;
         });
 
@@ -214,6 +216,8 @@ limitations under the License.
             .toggleClass('agent-response', msg.isAgentResponse)
             .text(prefix + msg.utterance));
         };
+         var objDiv = document.getElementById("chatWindows");
+            objDiv.scrollTop = objDiv.scrollHeight;
 
         // Attach all our event handlers
         socket.on('customer connected', createNewCustomerTab);
