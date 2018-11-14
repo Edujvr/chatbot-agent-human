@@ -74,14 +74,36 @@ limitations under the License.
          var messageText={
             queryResult:{
               fulfillmentMessages:[
-                {
+               /* {
+                  "platform": "ACTIONS_ON_GOOGLE",
                   message:'text',
                   text: {
                     text: [
                       $('#m').val()
                     ]
                   }
-                }
+                }*/
+        {
+        "platform": "ACTIONS_ON_GOOGLE",
+        "simpleResponses": {
+          "simpleResponses": [
+            {
+              "textToSpeech": "Este mensaje debe presentarse al Operator:\nEjemplo: Opcion1, Opcion2"
+            }
+          ]
+        }
+      },
+      {
+        "platform": "ACTIONS_ON_GOOGLE",
+        "simpleResponses": {
+          "simpleResponses": [
+            {
+              "textToSpeech": $('#m').val()
+            }
+          ]
+        }
+      }
+                 
               ]
             }
           }
