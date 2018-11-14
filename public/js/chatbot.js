@@ -204,11 +204,11 @@ function renderRichControls(data, parent){
             if(data[i]['message']==='link_out_chip' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderLinkOutSuggestion(data[i],parent);
-            }/*
+            }
             if(data[i]['message']==='simpleResponses' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderSimpleResponse(data[i],parent);
-            }*/
+            }
             if(data[i]['message']==='basic_card' &&
                 data[i]['platform']==='ACTIONS_ON_GOOGLE'){
                 renderBasicCard(data[i],parent);
@@ -443,7 +443,7 @@ function renderSimpleResponse(data, parent){
         'class':'textResponse gaSimpleResponse'
     });
     var simpleResponseText = jQuery('<p/>',{
-        html:data.simpleResponses.simpleResponses[i]['textToSpeech'],
+        html:markdown.toHTML(data.simpleResponses.simpleResponses[i]['textToSpeech']),
         tabindex:1
     });
     simpleResponseDiv.append(simpleResponseInnerDiv);
