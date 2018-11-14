@@ -72,49 +72,33 @@ limitations under the License.
           //var messageText = $('#m').val();
            
          var messageText={
-            queryResult:{
-              fulfillmentMessages:[
-               /* {
-                  "platform": "ACTIONS_ON_GOOGLE",
-                  message:'text',
-                  text: {
-                    text: [
-                      $('#m').val()
-                    ]
-                  }
-                }*/
-        {
-        "message" :"simpleResponses",   
-        "platform": "ACTIONS_ON_GOOGLE",
-        "simpleResponses": {
-          "simpleResponses": [
-            {
-              "textToSpeech": "Este mensaje debe presentarse al Operator:\nEjemplo: Opcion1, Opcion2"
-            }
-          ]
-        }
-      },
-      {
-        "message" :"simpleResponses",
-        "platform": "ACTIONS_ON_GOOGLE",
-        "simpleResponses": {
-          "simpleResponses": [
-            {
-              "textToSpeech": $('#m').val()
-            }
-          ]
-        }
-      }
-                 
-              ]
-            }
-          }
-         /* var messageText={
-            queryResult:{
-              fulfillmentText:$('#m').val()
-            
-          }
-        }*/
+           "queryResult": {
+             "fulfillmentMessages": [
+               {
+                 "message": "simpleResponses",
+                 "platform": "ACTIONS_ON_GOOGLE",
+                 "simpleResponses": {
+                   "simpleResponses": [
+                     {
+                       "textToSpeech": ""
+                     }
+                   ]
+                 }
+               },
+               {
+                 "message": "simpleResponses",
+                 "platform": "ACTIONS_ON_GOOGLE",
+                 "simpleResponses": {
+                   "simpleResponses": [
+                     {
+                       "textToSpeech": $('#m').val()
+                     }
+                   ]
+                 }
+               }
+             ]
+           }
+         }
           socket.emit('operator message', messageObject(currentTab.customerId, messageText));
           $('#m').val('');
           return false;
