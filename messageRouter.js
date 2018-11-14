@@ -204,14 +204,38 @@ class MessageRouter {
         var msgAgnt={
             queryResult:{
               fulfillmentMessages:[
-                {
+               /* {
+                  "platform": "ACTIONS_ON_GOOGLE",
                   message:'text',
                   text: {
                     text: [
-                      AppConstants.OPERATOR_GREETING
+                      $('#m').val()
                     ]
                   }
-                }
+                }*/
+        {
+        "message" :"simpleResponses",   
+        "platform": "ACTIONS_ON_GOOGLE",
+        "simpleResponses": {
+          "simpleResponses": [
+            {
+              "textToSpeech": AppConstants.OPERATOR_GREETING
+            }
+          ]
+        }
+      },
+      {
+        "message" :"simpleResponses",
+        "platform": "ACTIONS_ON_GOOGLE",
+        "simpleResponses": {
+          "simpleResponses": [
+            {
+              "textToSpeech": $('#m').val()
+            }
+          ]
+        }
+      }
+                 
               ]
             }
           }
