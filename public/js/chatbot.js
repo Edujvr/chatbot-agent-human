@@ -52,9 +52,9 @@ $(function () {
         $(answerRow).append(answerCol);
         $(answerCol).append(answerContainerDiv);
         var textFromDefaultResponse = speech;
-        if (textFromDefaultResponse.trim()!==''){
+        /*if (textFromDefaultResponse.trim()!==''){
             renderDefaultResponse(textFromDefaultResponse,answerContainerDiv);
-        }
+        }*/
 	renderRichControls(messages, answerContainerDiv);
         var isDisabled = $('#m').prop('disabled');
         if(eoc){
