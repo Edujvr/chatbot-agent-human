@@ -17,6 +17,8 @@ $(function () {
 //      $('#messages').append($('<li class="customer-message">').text(messageText));
       socket.emit('customer message', messageText);
       $('#m').val('');
+	var objDiv = document.getElementById("messages");
+        objDiv.scrollTop = objDiv.scrollHeight;
       return false;
     });
 
