@@ -257,7 +257,7 @@ function renderList(data,parent){
             var optionKey = item["info"]["key"];
             var imageUrl;
             if(item["image"]){
-                imageUrl = item["image"]["url"];
+                imageUrl = item["image"]["imageUri"];
             }
             var anchor = jQuery('<a/>',{
                 'data-key':optionKey,
