@@ -101,8 +101,6 @@ limitations under the License.
          }
           socket.emit('operator message', messageObject(currentTab.customerId, messageText));
           $('#m').val('');
-          var objDiv = document.getElementById("chatWindows");
-          objDiv.scrollTop = objDiv.scrollHeight;
           return false;
         });
 
