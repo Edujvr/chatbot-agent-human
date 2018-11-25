@@ -197,6 +197,8 @@ limitations under the License.
           }
           customer.window
             .append($('<li class="operator-message">').text(msg.utterance.queryResult.fulfillmentMessages[1].simpleResponses.simpleResponses[0].textToSpeech));
+          var objDiv = document.getElementById("chatWindows");
+          objDiv.scrollTop = objDiv.scrollHeight;
         };
 
         // Display messages sent by customers
