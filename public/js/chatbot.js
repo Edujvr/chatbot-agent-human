@@ -84,14 +84,7 @@ $(function () {
             });
         }
         var objDiv = document.getElementById("messages");
-        objDiv.scrollTop = objDiv.scrollHeight;
-/*
-        $(answerContainerDiv).append(simpleResponseRow);
-        $(simpleResponseRow).append(simpleResponseDiv);
-        $(simpleResponseDiv).html(markdown.toHTML(msg));
-      //$('#messages').append($('<li>').text(msg));
-      //$('#messages').append(markdown.toHTML(msg));
-*/      
+        objDiv.scrollTop = objDiv.scrollHeight;    
     });
 
     // When we receive a system error, display it
@@ -101,89 +94,6 @@ $(function () {
       $('#messages').append($('<li class="customer-error">').text(errorText));
     });
   });
-
-/*
-$(function () {
-
-    window.initialMessageDisplayed = false;
-	
-    var guid = ($("#sessionId").text()).trim();
-
-
-    $('form').on('submit', function (e) {
-        var query = $("#message").val();
-        showUserText();
-        e.preventDefault();
-
-
-        $.ajax({
-            type: 'post',
-            url: 'process.php',
-            data: {submit:true, message:query, sessionid: guid},
-            success: function (response) {
-                $("#message").removeAttr("disabled");
-                $('#message').focus();
-                var responseObj = JSON.parse(response);
-                var speech = responseObj.speech;
-                var messages = responseObj.messages;
-                var eoc = responseObj.isEndOfConversation;
-
-                var answerRow = jQuery('<div/>',{
-                    'class':'row'
-                });
-                var answerCol = jQuery('<div/>',{
-                    'class':'col'
-                });
-                var answerContainerDiv = jQuery('<div/>',{
-                    'class':"float-right",
-                    tabindex:0
-                });
-
-                $('#chat-text').append(answerRow);
-                $(answerRow).append(answerCol);
-                $(answerCol).append(answerContainerDiv);
-
-
-                var textFromDefaultResponse = speech;
-                if (textFromDefaultResponse.trim()!==''){
-                    renderDefaultResponse(textFromDefaultResponse,answerContainerDiv);
-                }
-                renderRichControls(messages, answerContainerDiv);
-
-
-                var isDisabled = $('#message').prop('disabled');
-                if(eoc){
-                    $('#message').attr("disabled","disabled");
-                    $('#chat-text').append('<hr/>');
-                    var divMessage = $('<div/>',{
-                        class:'d-flex justify-content-center'
-                    });
-                    var btnStartOver = $('<button/>',{
-                        class:'btn btn-sm btn-danger',
-                        text:'Comenzar de nuevo'
-                    });
-                    var textStartOver = $('<h3/>',{
-                        html:'Fin de la conversación'
-                    });
-                    $(divMessage).append(textStartOver);
-                    $(btnStartOver).css('margin-left','10px');
-                    $(divMessage).append(btnStartOver);
-                    $('#chat-text').append(divMessage);
-                    $(btnStartOver).click(function(){
-                        var textToSubmit = 'Comenzar de nuevo';
-                        $("#message").val(textToSubmit);
-                        $( "form" ).trigger( "submit" );
-                        $(divMessage).addClass('disabledbutton')
-                    });
-                }
-                var objDiv = document.getElementById("chat-text");
-                objDiv.scrollTop = objDiv.scrollHeight;
-            }
-        });
-    });
-});
-
-*/
 
 function renderDefaultResponse(textFromDefaultResponse,parent){
 
