@@ -96,7 +96,8 @@ limitations under the License.
                    ]
                  }
                }
-             ]
+             ],
+              sessionId: currentTab.customerId
            }
          }
           socket.emit('operator message', messageObject(currentTab.customerId, messageText));
