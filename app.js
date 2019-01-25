@@ -19,7 +19,7 @@ const io = require('socket.io')(http);
 const markdown = require('markdown').markdown;
 
 //Connect Mongo Atlas
-const Historial = require("./models/Historial");
+//const Historial = require("./models/Historial");
 // db instance connection
 require("./config/db");
 
