@@ -18,6 +18,11 @@ const http = require('http').Server(app);
 const io = require('socket.io')(http);
 const markdown = require('markdown').markdown;
 
+//Connect Mongo Atlas
+const Historial = require("./models/Historial");
+// db instance connection
+require("./config/db");
+
 // Load our custom classes
 const CustomerStore = require('./customerStore.js');
 const MessageRouter = require('./messageRouter.js');
