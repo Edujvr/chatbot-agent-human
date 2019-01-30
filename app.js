@@ -68,10 +68,6 @@ app.get('/operator', (req, res) => {
   res.sendFile(`${__dirname}/static/operator.html`);
 });
 
-app.get('/prueba', (req, res) => {
-  res.sendFile(`${__dirname}/static/prueba.html`);
-});
-
 // Begin responding to websocket and http requests
 messageRouter.handleConnections();
 http.listen(process.env.PORT || 3000);
